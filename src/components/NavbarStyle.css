@@ -26,6 +26,11 @@
     font-weight: 500;
 }
 
+.nav-menu li a:hover {
+    color: #339af0;
+    transition: 0.5s;
+}
+
 .hamburger {
     display: none;
 }

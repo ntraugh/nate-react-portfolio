@@ -18,6 +18,7 @@ const Project = () => {
                     title={project.title}
                     text={project.text}
                     website={project.website}
+                    repo={project.repo}
                     />
                 )
            })}

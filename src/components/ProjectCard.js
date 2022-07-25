@@ -1,6 +1,5 @@
 import React from 'react'
 import "./ProjectCardStyle.css"
-import { NavLink } from "react-router-dom"
 
 
 
@@ -14,8 +13,8 @@ const ProjectCard = (props) => {
                 <div className='project-details'>
                     <p style={{color: 'black'}}>{props.text}</p>
                     <div className='pro-btns'>
-                        <a href='{props.website}' className="btn">Live Site</a>
-                        <NavLink to="url.com" className="btn">Repository</NavLink>
+                        <a href={props.website} className="btn">Live Site</a>
+                        <a href={props.repo} className="btn">Repository</a>
                     </div>
                 </div>
             </div>

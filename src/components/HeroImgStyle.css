@@ -40,3 +40,10 @@
     }
    
 }
+
+@media screen and (max-width: 418px) {
+    .hero-img2 h1 {
+        text-align: center;
+    }
+   
+}
