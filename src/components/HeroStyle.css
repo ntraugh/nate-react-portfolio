@@ -8,7 +8,10 @@
     font-size: 1.5rem;
     text-shadow: 2px 2px 2px black;
     font-weight: 700;
+    animation-name: appear;
+    animation-duration: 1.5s;
 }
+
 
 .hero-img {
     width: 100%;
@@ -32,6 +35,8 @@
 .hero {
     height: 100%;
     width: 100%;
+    overflow-y: hidden;
+    display: block;
 }
 
 .hero .content {
@@ -45,13 +50,18 @@
     font-size: 4rem;
     padding: 0.6rem 0 1.5rem;
     text-shadow: 2px 2px 2px black;
+    animation-name: appear;
+    animation-duration: 1.5s;
 }
 
 .content .btn {
    margin-right: 2rem;
    
 }
-
+@keyframes appear {
+    from { transform: translateX(20rem) }
+    to {   transform: translateY(0)}
+  }
 
 @media screen and (max-width: 390px) {
     .hero .content h1 {
@@ -60,4 +70,10 @@
     .hero .content p {
         font-size: 1.4rem;
     }
+}
+@media screen and (min-width: 1008px) {
+    @keyframes appear {
+        from { transform: translateX(100rem) }
+        to {   transform: translateY(0)}
+      }
 }
