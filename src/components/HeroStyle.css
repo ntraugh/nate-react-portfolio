@@ -47,15 +47,15 @@
     text-shadow: 2px 2px 2px black;
 }
 
-.hero .content .btn {
+.content .btn {
    margin-right: 2rem;
    
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 390px) {
     .hero .content h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .hero .content p {
         font-size: 1.4rem;
