@@ -1,6 +1,6 @@
 import React from 'react'
 import "./FooterStyle.css"
-import { FaMailBulk, FaGithub, FaLinkedin} from "react-icons/fa"
+import { FaMailBulk, FaGithub, FaLinkedin, FaTwitch} from "react-icons/fa"
 
 const Footer = () => {
   return (
@@ -27,6 +27,13 @@ const Footer = () => {
                     </a>
                     <a href='https://www.linkedin.com/in/nate-traugh-7bb18a20a/'>
                         <FaLinkedin
+                            size={30}
+                            style={{color: 'white', 
+                            marginRight: "2rem"}}
+                        />    
+                    </a>
+                    <a href='https://www.twitch.tv/traugh_daddy'>
+                        <FaTwitch
                             size={30}
                             style={{color: 'white', 
                             marginRight: "2rem"}}
