@@ -1,4 +1,4 @@
-import project3 from "../images/trailblaze.PNG"
+import project3 from "../images/Br.PNG"
 import project2 from "../images/FlowerShopHome.png"
 import project1 from "../images/newweather.PNG"
 
@@ -13,12 +13,12 @@ export const Projects = [
       repo: "https://github.com/ntraugh/flower-shop"
     },
     {
-        title: "Trailblazers",
+        title: "Jesse And Friends",
         text:
-          "Using Sequelize, MYSQL, handlebars.js, OAUTH, this app allows the user to search for a state and an activity and they will get parks in return. Users must login to see the favorite feature.",
+          "Breaking Bad app that gives back interesting information on the characters.  Users can search for any character in the show.",
         image: project3,
-        website: "https://intense-fjord-45584.herokuapp.com/",
-        repo: "https://github.com/mycancel/trailblazers"
+        website: "https://jesseandfriends.herokuapp.com/",
+        repo: "https://github.com/ntraugh/breaking-bad"
       },
       {
         title: "Current Weather",
