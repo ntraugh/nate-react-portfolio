@@ -1,9 +1,25 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./ContactFormStyle.css"
 import emailjs from '@emailjs/browser';
 
 
 const ContactForm = () => {
+  const [message, setMessage] = useState('');
+  const [error, setError] = useState(null);
+
+  function isValidEmail(email) {
+    return /\S+@\S+\.\S+./.test(email);
+  }
+
+  const handleChange = event => {
+    if (!isValidEmail(event.target.value)) {
+      setError('Email is invalid');
+    } else {
+      setError(null);
+    }
+
+    setMessage(event.target.value);
+  };
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -21,7 +37,8 @@ const ContactForm = () => {
         <label>Name</label>
         <input typeof='text' id='name' name='name' required="true" placeholder='Name'></input>
         <label>Email</label>
-        <input typeof='email' id='email' name='email'required="true" placeholder='Email'></input>
+        <input typeof='email' id='email' name='email'required="true" value={message} onChange={handleChange} placeholder='Email'/>
+        {error && <h2 style={{color: "red"}}>{error}</h2>}
         <label>Message</label>
         <textarea rows="6" id='message' name='message' required="true" placeholder='Type message here'></textarea>
         <button className='btn' type='sumbit'>Submit</button>
