@@ -19,11 +19,11 @@ const ContactForm = () => {
     <div className='form'>
        <form netlify onSubmit={sendEmail}>
         <label>Name</label>
-        <input typeof='text' id='name' name='name' placeholder='Name'></input>
+        <input typeof='text' id='name' name='name' required="true" placeholder='Name'></input>
         <label>Email</label>
-        <input typeof='email' id='email' name='email' placeholder='Email'></input>
+        <input typeof='email' id='email' name='email'required="true" placeholder='Email'></input>
         <label>Message</label>
-        <textarea rows="6" id='message' name='message' placeholder='Type message here'></textarea>
+        <textarea rows="6" id='message' name='message' required="true" placeholder='Type message here'></textarea>
         <button className='btn' type='sumbit'>Submit</button>
        </form>
     </div>
