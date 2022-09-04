@@ -41,7 +41,7 @@ const ContactForm = () => {
         {error && <h2 style={{color: "red"}}>{error}</h2>}
         <label>Message</label>
         <textarea rows="6" id='message' name='message' required="true" placeholder='Type message here'></textarea>
-        <button className='btn' type='sumbit'>Submit</button>
+        {!error && <button className='btn' type='sumbit'>Submit</button>}
        </form>
     </div>
   )

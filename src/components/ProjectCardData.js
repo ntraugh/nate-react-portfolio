@@ -1,11 +1,11 @@
-import project3 from "../images/Br.PNG"
-import project2 from "../images/FlowerShopHome.png"
-import project1 from "../images/newweather.PNG"
+import project3 from "../images/youtube.PNG"
+import project2 from "../images/bou.PNG"
+import project1 from "../images/crypto.PNG"
 
 
 export const Projects = [
     {
-      title: "Boutique Now",
+      title: "Bouquet Now",
       text:
         "An E-Commerce store for all your boutique needs. Users must login in order to checkout.",
       image: project2,
@@ -13,20 +13,20 @@ export const Projects = [
       repo: "https://github.com/ntraugh/flower-shop"
     },
     {
-        title: "Jesse And Friends",
+        title: "NateTube",
         text:
-          "Breaking Bad app that gives back interesting information on the characters.  Users can search for any character in the show.",
+          "A YouTube clone that uses YouTube v3 API to receive users videos. Single video pages produce recommended videos. Search by channel as well.",
         image: project3,
-        website: "https://jesseandfriends.herokuapp.com/",
-        repo: "https://github.com/ntraugh/breaking-bad"
+        website: "https://natetube.netlify.app/",
+        repo: "https://github.com/ntraugh/array-practice/tree/main/youtube"
       },
       {
-        title: "Current Weather",
+        title: "Crypto World",
         text:
-          "Search for any city in the world and not only be presented with the current weather for that city, but also a background image that corresponds as well.",
+          "A crypto site that utilizes RapidApi calls to CoinDesk to recieve up to date information about all cryptos. Users can view news about any crypto.",
         image: project1,
-        website: "https://ntraugh.github.io/Weather-App/",
-        repo: "https://github.com/ntraugh/Weather-App"
+        website: "https://cryptoworldtraugh.netlify.app",
+        repo: "https://github.com/ntraugh/array-practice/tree/main/cryptoapp"
       }
     
 ]
